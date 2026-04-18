@@ -38,7 +38,7 @@
 /* Selectores tipo ID */
 /* ------------------------------------ */
 #header {
-    background-color: var(--color4);
+    background-color: var(--color5);
     color: var(--color3);
 }
 
@@ -72,6 +72,10 @@
 #footer {
     background-color: var(--color7);
     color: var(--color8);
+}
+
+#banner {
+    background-color: var(--color4);
 }
 
 /* PRODUCTO */
@@ -163,6 +167,7 @@ p {
     margin-bottom: 40px;
 }
 
+/* Para que la imagen sea responsive */
 .img-fluid {
     width: 100%;
     height: auto;
