@@ -60,10 +60,13 @@
 #productos{
     background-color: var(--color5);
     color: var(--color4);
+    padding: 50px 0;
+    
 }
 
 #novedades{
-    background-color: var(--color4);
+    background-color: var(--color2);
+    color: var(--color7);
 }
 
 #footer {
@@ -71,6 +74,7 @@
     color: var(--color8);
 }
 
+/* PRODUCTO */
 #productos img, #novedades img{
     max-width: 200px;
     display: block;
@@ -101,6 +105,7 @@ img, video {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    
 }
 
 
@@ -130,10 +135,32 @@ p {
     margin: auto;
 }
 
-/* CAMBIO DE COLOR SOLO CHEESECAKE */
+/*CONTAINER PARA NOVEDADES*/
+.novedadescontainer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.novedad{
+    width: 300px;
+    text-align: center;
+}
+
+.novedad img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+/* CAMBIO DE COLOR PARA PRODUCTOS */
 .intercalado{
     background-color: var(--color4);
     color: var(--color3);
+    padding: 30px 0;
+    margin-bottom: 40px;
 }
 
 .img-fluid {
