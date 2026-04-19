@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Enlazar el HTML con el favicon eso es la imagen que se ve al lado del titulo en las pestañas -->
-    <link rel="shortcut icon" href="assets/img/icon-repost.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon-icono-rep.ico" type="image/x-icon">
 
     <!-- Enlazar html con fuentes externas de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="nav-logo">
                 <a href="">
-                    <img class="img-fluid" src="assets/img/logo-banner3.png" alt="">
+                    <img class="img-fluid" src="assets/img/logo-banner-panchita.png" alt="">
                 </a href="#">
             </div>
 
@@ -33,7 +33,7 @@
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Nosotros</a>
-                <a href="#">Categorias</a>
+                <a href="#">Categorías</a>
                 <a href="#">Novedades</a>
                 <a href="#">Promociones</a>
                 <a href="#">Contacto</a>
@@ -46,7 +46,9 @@
     <main>
         <!-- Banner -->
         <section id="banner" class="padding-section">
-                <img class="img-fluid" src="assets/img/banner-logo-reposteria.jpg" alt="">
+            <div class="background-rojo">
+                <img class="img-fluid" src="assets/img/banner-logo-reposterias.jpg" alt="">
+            </div>
         </section>
 
         <!-- Nosotros -->
@@ -59,10 +61,10 @@
             </div>
         </section>
 
-        <!--BANNER 1-->
+        <!--BANNER NOSOTROS-->
         <section id="bannernosotros" class="padding-section">
-            <div class="container">
-                <img src="assets/img/banner-pasteleria.png" alt="">
+            <div class="contenedor-nosotros">
+                <img src="assets/img/banner-nosotros-panc.jpg" alt="">
             </div>
         </section>
 
@@ -75,6 +77,13 @@
             </div>
         </section>
 
+        <!-- BANNER MISION-->
+        <section id="bannermision" class="padding-section">
+            <div class="contenedor-mision">
+                <img class="img-fluid" src="assets/img/img-mision.jpg" alt="">
+            </div>
+        </section>
+
         <!-- Vision -->
         <section id="vision" class="padding-section">
             <div class="container">
@@ -84,15 +93,15 @@
             </div>
         </section>
         
-        <!-- BANNER 2-->
-        <section id="bannermision" class="padding-section">
-            <div class="container">
-                <img class="img-fluid" src="assets/img/postresgeneral.jpg" alt="">
+        <!-- BANNER VISION-->
+        <section id="bannervision" class="padding-section">
+            <div class="contenedor-vision">
+                <img class="img-fluid" src="assets/img/img-vision.jpg" alt="">
             </div>
         </section>
 
         <!-- Productos -->
-         <section id="productos" class="padding-section">
+         <section id="productos" class="padding-xl">
             <div class="container">
                 <h2>Nuestros Productos</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error, amet quibusdam assumenda ad quas incidunt mollitia rem facilis excepturi non laboriosam! Aut suscipit optio, officia quidem odio cum? Dolorem placeat atque quisquam animi omnis aperiam minima totam fugit consequuntur mollitia labore, reprehenderit corporis repellendus officiis eius nemo soluta ratione.</p>
@@ -100,7 +109,7 @@
             
             <!--BANNER 3-->
             <section id="bannerproductos">
-                    <img class="img-fluid" src="assets/img/POSTRES3.jpeg" alt="">               
+                    <img class="img-fluid" src="assets/img/postres3.jpeg" alt="">               
             </section>
 
             <div class="padding-section" >
@@ -111,11 +120,11 @@
                 </div>
             </div>
 
-            <div class="intercalado"> 
+            <div class="padding-section"> 
                 <div class="container">
                 <h3 class="titulo-centrado">Cheesecake</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla veritatis vero fugiat beatae nesciunt odit dolore ea exercitationem possimus? Quia, modi consequatur nobis soluta facere placeat sint minus et cupiditate.</p>
-                <img class="img-fluid" src="assets/img/Cheesecake.jpg" alt="">
+                <img class="img-fluid" src="assets/img/cheesecake.jpg" alt="">
                 </div>
 
             </div>
@@ -128,9 +137,10 @@
                 </div>
 
             </div>
+        </section>
 
             <!-- Novedades -->
-        <section id="novedades" class="padding-xl">
+        <section id="novedades" class="padding-section">
             <div class="container">
                 <h2>Novedades</h2>
                 <p>
@@ -141,28 +151,29 @@
             <div class="novedadescontainer">
                 <div class="novedad">
                     <h3>Torta Helada</h3>
-                    <img class="img-fluid" src="assets/img/tortahelada.webp" alt="Torta helada">
+                    <img class="img-fluid" src="assets/img/img-torta-helado.jpg" alt="Torta helada">
                 </div>
 
                 <div class="novedad">
                     <h3>Helados</h3>
-                    <img class="img-fluid" src="assets/img/helado.jpg" alt="Helados">
+                    <img class="img-fluid" src="assets/img/img-helados.jpg" alt="Helados">
                 </div>
             </div>
             </div>
         </section>
 
 
+    <!-- Video -->
 
-    </section>
-
-    <section id="video" class="padding-section">
+    <section id="video" class="padding-xl">
         <div>
             <video class="video-fluid" muted autoplay loop>
-                <source src="assets/videos/video-reposteria.mp4" type="video/mp4">
+                <source src="assets/videos/video-panchita-repos.mp4" type="video/mp4">
             </video>
         </div>
          </section>
+
+         <!-- Tabla de promociones -->
 
         <section id ="promocion" class="padding-section">
             <div class="container">
@@ -172,7 +183,7 @@
                     <thead>
                         <tr>
                             <th>Producto</th>
-                            <th>Promocion</th>
+                            <th>Promoción</th>
                             <th>Precio</th>
                         </tr>
                      </thead>
@@ -195,21 +206,23 @@
                         </tr>
                         <tr>
                             <td>Pastel de cumpleaños</td>
-                            <td>Decoracion gratis</td>
+                            <td>Decoración gratis</td>
                             <td>S/ 60.00</td>
                         </tr>
                      </tbody>
 
                       <tfoot>
                         <tr>
-                            <td colspan="3">(*) Todo pedido es con 1 semana de anticipacion</td>
+                            <td colspan="3">(*) Todo pedido es con 1 semana de anticipación</td>
                         </tr>
                      </tfoot>
                  </table>
             </div>
          </section>
 
-        <section id="contacto" class="padding-section">
+         <!-- Tabla de contactos -->
+
+        <section id="contacto" class="padding-xl">
             <div class="container">
                 <h2>Contactos</h2>
                 
@@ -217,13 +230,13 @@
                     <thead>
                         <tr>
                             <th>Contacto</th>
-                            <th>Descripcion</th>
+                            <th>Descripción</th>
                         </tr>
                      </thead>
 
                      <tbody>
                         <tr>
-                            <td>Telefono</td>
+                            <td>Teléfono</td>
                             <td>998 156 203</td>
                         </tr>
                         <tr>
@@ -237,6 +250,61 @@
                         <tr>
                             <td>Instagram</td>
                             <td>@panchita.postres</td>
+                        </tr>
+                      </tbody>
+                 </table>
+            </div>
+         </section>
+
+         <!-- Tabla de horario -->
+          <section id="horario" class="padding-section">
+            <div class="container">
+                <h2>Horario de Atención</h2>
+                
+                <table class="tbl-horario">
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Abierto</th>
+                            <th>Cerrado</th>
+                        </tr>
+                     </thead>
+
+                     <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9:00 am</td>
+                            <td>9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>9:00 am</td>
+                            <td>9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>9:00 am</td>
+                            <td>9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>9:00 am</td>
+                            <td>9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8:00 am</td>
+                            <td>8:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>7:00 am</td>
+                            <td>7:00 am</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>6:00 am</td>
+                            <td>6:00 am</td>
                         </tr>
                       </tbody>
                  </table>

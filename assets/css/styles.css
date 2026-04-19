@@ -9,7 +9,6 @@
     --color6: #282828; /* Color de subtitulos */
     --color7: #171d25; /* Color del footer-bg */
     --color8: #bbbbb9; /* Color del texto del footer */
-    --color9: #FFFFFF; /* Color de links en el footer */
 
     /* Tipografias */
     --fuente1: "Manrope", sans-serif;
@@ -69,21 +68,19 @@ text-align: center;
 }
 
 /*BANNER MISION*/
-#bannermision{
+#bannermision, #bannervision{
     padding: 40px 0;
     text-align: center;
 }
 
-#bannermision img{
+#bannermision img, #bannervision img{
     max-width: 100%;
     height: auto;
 }
 
 /*ESPACIO DE LETRA DE SECCION PRODUCTOS*/
 #productos{
-    background-color: var(--color5);
-    color: var(--color4);
-    padding: 0;
+    background-color: var(--color4);
 }
 
 
@@ -140,6 +137,22 @@ text-align: center;
     margin-top: 20px;
 }
 
+#contacto {
+    background-color: var(--color7);
+}
+
+#contacto h2 {
+    color: var(--color4);
+}
+
+#horario {
+    background-color: var(--color7);
+}
+
+#horario h2 {
+    color: var(--color4);
+}
+
 
 /* ------------------------------------ */
 /* Selectores tipo etiqueta */
@@ -157,11 +170,11 @@ img, video {
 p {
     margin-top: 0;
     margin-bottom: 1rem;   
+    color: var(--color3);
 }
 
 h2 {
     color: var(--color6);
-    /*text-align: center;/*  /* Pone los h3 al medio */
     margin-bottom: 30px; /* Da un espacio uniforme debajo */
 }
 
@@ -196,16 +209,21 @@ h3{
     margin: auto;
 }
 
-/* IMAGENES DE PRODUCTOS */
-.galeproductos{
-    display: flex;
-    justify-content: space-between;
+.contenedor-nosotros {
+    max-width: 90%;
+    margin: auto;
 }
 
-/*TAMAÑO DE CADA IMAGEN*/
-.galeproductos img{
-    width: 30%;
+.contenedor-vision {
+    max-width: 20%;
+    margin: auto;
 }
+
+.contenedor-mision {
+    max-width: 35%;
+    margin: auto;
+}
+
 
 /*CONTAINER PARA NOVEDADES*/
 .novedadescontainer{
@@ -227,13 +245,13 @@ h3{
     margin: 10px auto 0 auto;
 }
 
-/* CAMBIO DE COLOR PARA PRODUCTOS */
-.intercalado{
+/* CAMBIO DE COLOR PARA PRODUCTOS 
+/* .intercalado{
     background-color: var(--color4);
     color: var(--color3);
     padding: 30px 0;
     margin-bottom: 40px;
-}
+}*/
 
 /* Para que la imagen sea responsive */
 .img-fluid {
@@ -249,7 +267,7 @@ h3{
     height: auto;
 }
 
-
+/* Para que el video sea responsive */
 .video-fluid {
     width: 100%;
     height: auto;
@@ -274,6 +292,8 @@ h3{
     padding: 10px;
 }
 
+/* Tabla de contacto */
+
 .tbl-contacto {
     width: 100%;
     height: auto;
@@ -281,14 +301,34 @@ h3{
 }
 
 .tbl-contacto th {
-    background-color: var(--color5);
     color: var(--color4);
-    border: 1px solid var(--color3);
+    border: 1px solid var(--color7);
     padding: 10px;
 }
 
 .tbl-contacto td {
     border: 1px solid var(--color8);
+    color: var(--color4);
+    padding: 10px;
+}
+
+/* Tabla de horarios */
+
+.tbl-horario {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.tbl-horario th {
+    color: var(--color4);
+    border: 1px solid var(--color7);
+    padding: 10px;
+}
+
+.tbl-horario td {
+    border: 1px solid var(--color8);
+    color: var(--color4);
     padding: 10px;
 }
 
