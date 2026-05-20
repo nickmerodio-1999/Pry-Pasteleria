@@ -225,6 +225,8 @@ h3{
 }
 
 
+
+
 /*CONTAINER PARA NOVEDADES*/
 .novedadescontainer{
     display: flex;
@@ -245,14 +247,6 @@ h3{
     margin: 10px auto 0 auto;
 }
 
-/* CAMBIO DE COLOR PARA PRODUCTOS 
-/* .intercalado{
-    background-color: var(--color4);
-    color: var(--color3);
-    padding: 30px 0;
-    margin-bottom: 40px;
-}*/
-
 /* Para que la imagen sea responsive */
 .img-fluid {
     width: 100%;
@@ -265,6 +259,27 @@ h3{
 .nav-logo {
     width: 150px;
     height: auto;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu-link {
+    display: inline-block;
+    color: var(--color2);
+    padding: 5px 15px;
+    text-decoration: none;
 }
 
 /* Para que el video sea responsive */
