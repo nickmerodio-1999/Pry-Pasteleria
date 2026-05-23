@@ -1,14 +1,22 @@
 /* Se puede cambiar lo que esta dentro del root */
 :root {
     /* Paleta de colores */
-    --color1: #1e1414; /* Color de fondo del top-bar */
-    --color2: #C8D4E2; /* Color de texto del top_bar */
-    --color3: #545a5b; /* Color de parrafo */
-    --color4: #FFFFFF; /* Color blanco */
-    --color5: #b40818; /* Color primario */
-    --color6: #282828; /* Color de subtitulos */
-    --color7: #171d25; /* Color del footer-bg */
-    --color8: #bbbbb9; /* Color del texto del footer */
+    --color1: #1e1414;
+    /* Color de fondo del top-bar */
+    --color2: #C8D4E2;
+    /* Color de texto del top_bar */
+    --color3: #545a5b;
+    /* Color de parrafo */
+    --color4: #FFFFFF;
+    /* Color blanco */
+    --color5: #b40818;
+    /* Color primario */
+    --color6: #282828;
+    /* Color de subtitulos */
+    --color7: #171d25;
+    /* Color del footer-bg */
+    --color8: #bbbbb9;
+    /* Color del texto del footer */
 
     /* Tipografias */
     --fuente1: "Manrope", sans-serif;
@@ -21,7 +29,7 @@
 /* ------------------------------------ */
 /* Selector universal de elementos */
 /* ------------------------------------ */
-*{
+* {
     /* Elimina espacios predeterminados */
     margin: 0;
     padding: 0;
@@ -46,26 +54,26 @@
     color: var(--color3);
 }
 
-#nosotros{
+#nosotros {
     background-color: var(--color4);
     color: var(--color3);
 }
 
 /*BANNER DE LA EMPRESA*/
 
-#mision{
+#mision {
     background-color: var(--color4);
     color: var(--color3);
 }
 
 
 /*ESPACIO DE LETRA DE SECCION PRODUCTOS*/
-#productos{
+#productos {
     background-color: var(--color4);
 }
 
 
-#novedades{
+#novedades {
     background-color: var(--color4);
     color: var(--color3);
 }
@@ -80,13 +88,14 @@
 }
 
 /* PRODUCTO */
-#bannerproductos{
+#bannerproductos {
     padding: 40px 0;
     text-align: center;
 }
 
 
-#productos img, #novedades img{
+#productos img,
+#novedades img {
     max-width: 200px;
     display: block;
     margin: 0 auto;
@@ -94,7 +103,7 @@
 }
 
 /*TAMAÑO DEL BANNER PRODUCTO*/
-#bannerproductos img{
+#bannerproductos img {
     max-width: 800px;
     width: 100%;
     height: auto;
@@ -102,13 +111,14 @@
 
 
 /*ESPACIO DEBAJO DEL ELEMENTO H2*/
-#productos h2{
-    margin-top: 0;      
+#productos h2 {
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
 /* ESPACIO DEBAJO DEL ELEMENTO H3 */
-#productos h3, #novedades h3{
+#productos h3,
+#novedades h3 {
     margin-bottom: 10px;
 }
 
@@ -144,22 +154,24 @@ body {
 }
 
 /* Elimina los espacios que aparecen debajo del objeto */
-img, video {
+img,
+video {
     display: block;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem;   
+    margin-bottom: 1rem;
     color: var(--color3);
 }
 
 h2 {
     color: var(--color6);
-    margin-bottom: 30px; /* Da un espacio uniforme debajo */
+    margin-bottom: 30px;
+    /* Da un espacio uniforme debajo */
 }
 
-h3{
+h3 {
     color: var(--color6);
 }
 
@@ -180,13 +192,14 @@ h3{
     padding-bottom: 90px;
 }
 
-.padding-section{
+.padding-section {
     padding-bottom: 40px;
 }
 
 /* Ajustar ancho del contenedor en pantalla */
 .container {
     max-width: 70%;
+    
     margin: auto;
 }
 
@@ -209,10 +222,12 @@ h3{
 
 /* Limita el tamaño de imágenes muy grandes para que no ocupen toda la pantalla */
 .banner-section .img-reducida {
-    max-width: 300px;  /* Límite estricto de tamaño */
+    max-width: 300px;
+    /* Límite estricto de tamaño */
     width: 100%;
     display: block;
-    margin: 0 auto;    /* Las centra perfectamente */
+    margin: 0 auto;
+    /* Las centra perfectamente */
 }
 
 
@@ -224,12 +239,12 @@ h3{
     gap: 40px;
 }
 
-.novedad{
+.novedad {
     width: 300px;
     text-align: center;
 }
 
-.novedad img{
+.novedad img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -264,11 +279,25 @@ h3{
     flex-direction: row;
 }
 
+/* TRANSICION DE LA BARRA SEGUN LA PLANTILLA */
 .nav-menu-link {
     display: inline-block;
     color: var(--color2);
     padding: 5px 15px;
     text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-menu-link:hover{
+    background-color: var(--color5);
+    color: var(--color4);
+}
+
+/*PARA QUE RESALTE LA SECCION EN LA QUE SE ESTÁ*/
+.nav-menu-link-active{
+    background-color: var(--color5);
+    color: var(--color4);
 }
 
 /* Para que el video sea responsive */
@@ -353,21 +382,27 @@ h3{
 /* TABLET: Pantallas entre 768px y 1024px */
 @media (max-width: 1024px) {
     .container {
-        max-width: 85%; /* Le da un poco más de ancho en tablets */
+        max-width: 85%;
+        /* Le da un poco más de ancho en tablets */
     }
+
     .banner-container {
         max-width: 90%;
     }
+
     .novedades-container {
-        gap: 20px; /* Junta un poco las tarjetas si falta espacio */
+        gap: 20px;
+        /* Junta un poco las tarjetas si falta espacio */
     }
 }
 
 /* MOBILE: Pantallas hasta 768px (Celulares) */
 @media (max-width: 768px) {
     .container {
-        max-width: 95%; /* Aprovecha casi toda la pantalla en celular */
+        max-width: 95%;
+        /* Aprovecha casi toda la pantalla en celular */
     }
+
     .banner-container {
         max-width: 100%;
     }
@@ -377,8 +412,10 @@ h3{
         flex-direction: column;
         gap: 15px;
     }
+
     .nav-menu {
-        flex-wrap: wrap; /* Permite que los botones bajen si no caben */
+        flex-wrap: wrap;
+        /* Permite que los botones bajen si no caben */
         justify-content: center;
         gap: 10px;
     }
@@ -390,7 +427,9 @@ h3{
     }
 
     /* Hace que las tablas no rompan el celular (se podrán deslizar con el dedo) */
-    .tbl-promocion, .tbl-contacto, .tbl-horario {
+    .tbl-promocion,
+    .tbl-contacto,
+    .tbl-horario {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
@@ -398,4 +437,120 @@ h3{
 }
 
 
+/* Selectores para estilizar el topbar */
+#topbar {
+    background-color: var(--color7);
+    color: var(--color4);
+    font-size: 0.8rem;
+}
+
+.topbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-container a {
+    color: var(--color4);
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+
+
+/* NAV ESTATICA */
+.sticky-stop {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/*ANIMACION LOGO*/
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2026-5-23 13:57:49
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
 
