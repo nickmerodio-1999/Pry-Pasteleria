@@ -199,7 +199,6 @@ h3 {
 /* Ajustar ancho del contenedor en pantalla */
 .container {
     max-width: 70%;
-    
     margin: auto;
 }
 
@@ -256,7 +255,6 @@ h3 {
     width: 100%;
     height: auto;
 }
-
 
 
 /* Tamaño del logo */
@@ -365,12 +363,30 @@ h3 {
     padding: 10px;
 }
 
-.titulo-centrado {
-    text-align: center;
-    margin-bottom: 20px;
+/*Flexbox de uso general*/
+
+/*Flexbox padre*/
+.row {
+    display: flex; /*Activa Flexbox*/
+    flex-direction:row; /*Orientacion de los hijos en fila*/
+
 }
 
+/* Flexbox hijos */
+.col {
+    /* Permiten que los hijos tengan el mismo ancho */
+    flex-basis: 0;
+    flex-grow: 1;
 
+    /* Espacio entre columnas  */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.titulo-centrado { 
+     text-align: center; 
+     margin-bottom: 20px; 
+} 
 
 
 
@@ -552,5 +568,29 @@ h3 {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
+}
+
+/* Efectos visuales */
+.card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: var(--color4);
+    transition: all 0.4s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-10px) perspective(700px) rotateY(5deg);
+    box-shadow: 0 5px 10px var(--color3);
+}
+
+.card-container {
+    padding: 20px;
 }
 
