@@ -688,8 +688,8 @@ h3 {
 /* Esto afecta SOLAMENTE a las imágenes que están dentro de una tarjeta */
 #productos .card-container .img-fluid {
     display: block;
-    max-width: 100%;   /* ¡Esta es la clave! Anula el límite de los 200px */
-    width: 100%;       /* Obliga a estirarse al ancho de la tarjeta */
+    max-width: 100%;    /* Evita que la imagen se salga del ancho de su contenedor */
+    width: 100%;        /* Hace que la imagen ocupe todo el ancho disponible de la tarjeta */
     height: 200px;     /* Mantiene las 3 fotos del mismo alto */
     object-fit: cover; /* Evita que se deformen */
 }
