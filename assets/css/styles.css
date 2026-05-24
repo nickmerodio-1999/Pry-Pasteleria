@@ -17,9 +17,16 @@
     /* Color del footer-bg */
     --color8: #bbbbb9;
     /* Color del texto del footer */
+    --color9: #ffb200;
+    /* Color de los botones y su borde */
+    --color10: #000000;
+    /* Color negro en los botones */
+    --color11: #ffc933;
+
 
     /* Tipografias */
     --fuente1: "Manrope", sans-serif;
+    --fuente2: "Caveat", cursive;
 
     /* Interlineados */
     --spacing1: 1.6;
@@ -44,9 +51,16 @@
 /* ------------------------------------ */
 /* Selectores tipo ID */
 /* ------------------------------------ */
+
+/* Suaviza el salto del scroll vertical (Código del profe) */
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
     background-color: var(--color5);
     color: var(--color3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #vision {
@@ -83,8 +97,21 @@
     color: var(--color8);
 }
 
+#footer a {
+    color: var(--color3);
+    text-decoration: none;
+    /* Quita el subrayado */
+    margin-left: 20px
+}
+
+#footer i {
+    font-size: 20px;
+    color: var(--color4);
+}
+
 #banner {
-    background-color: var(--color4);
+    background-color: var(--color5);
+    color: var(--color4);
 }
 
 /* PRODUCTO */
@@ -129,12 +156,9 @@
 }
 
 #contacto {
-    background-color: var(--color7);
+    background-color: var(--color4);
 }
 
-#contacto h2 {
-    color: var(--color4);
-}
 
 #horario {
     background-color: var(--color7);
@@ -168,7 +192,7 @@ p {
 h2 {
     color: var(--color6);
     margin-bottom: 30px;
-    /* Da un espacio uniforme debajo */
+    font-size: 40px;
 }
 
 h3 {
@@ -229,6 +253,60 @@ h3 {
     /* Las centra perfectamente */
 }
 
+/* Alinea verticalmente los elementos del flexbox */
+.align-center {
+    align-items: center;
+}
+
+/* Estilos para el texto gigante del banner */
+.banner-textos h1 {
+    color: var(--color4);
+    font-size: 3.5rem; /* Un poco más grande para impactar más */
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.banner-textos h1 span {
+    font-family: var(--fuente2); /* Aplica la fuente Caveat */
+    font-size: 4.5rem; /* La cursiva necesita ser más grande para leerse bien */
+    font-weight: normal; 
+    display: block; /* Obliga a que este texto baje a su propia línea */
+}
+
+.banner-textos p {
+    color: var(--color4);
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* Acerca un poco el párrafo al título principal */
+}
+
+/* El estilo del botón amarillo de la plantilla */
+.btn-general {
+    display: inline-block;
+    /* Cada enlace se tratará como una caja */
+    background-color: var(--color9); /* Color amarillo/mostaza */
+    border: 1px solid var(--color9);
+    color: var(--color10);
+    /* Tipografía sacada del inspector */
+    font-family: var(--fuente2);
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    line-height: 2; /* Centra el texto verticalmente */
+    /* Medidas exactas de la plantilla */
+    padding: 0.4375rem 2.25rem; 
+    border-radius: 6.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none; /* Quitamos las mayúsculas para que la cursiva se lea bien */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.btn-general:hover {
+    background-color: var(--color11); /* Un amarillo un poco más claro y brillante */
+    border: 1px solid var(--color11);
+    color: var(--color10); /* El texto sigue completamente negro */
+}
+
+
 
 
 /*CONTAINER PARA NOVEDADES*/
@@ -285,6 +363,8 @@ h3 {
     text-decoration: none;
     border-radius: 20px;
     transition: all 0.4s ease-in-out;
+    font-size: 16px; 
+    font-weight: 400; /*  la letra se ve un poco más negrita segun pagina guia */
 }
 
 .nav-menu-link:hover{
@@ -363,12 +443,23 @@ h3 {
     padding: 10px;
 }
 
+/* Flexbox para el footer */
+.footer-flexbox {
+    display: flex;
+    /* Activa flexbox */
+    flex-direction: row;
+    /* Orientación de los hijos en fila */
+    justify-content: space-between;
+}
+
 /*Flexbox de uso general*/
 
 /*Flexbox padre*/
 .row {
     display: flex; /*Activa Flexbox*/
     flex-direction:row; /*Orientacion de los hijos en fila*/
+    margin-left: -15px;  
+    margin-right: -15px; 
 
 }
 
@@ -442,7 +533,7 @@ h3 {
         align-items: center;
     }
 
-    /* Hace que las tablas no rompan el celular (se podrán deslizar con el dedo) */
+    /* Hace que las tablas no rompan el celular */
     .tbl-promocion,
     .tbl-contacto,
     .tbl-horario {
@@ -593,4 +684,125 @@ h3 {
 .card-container {
     padding: 20px;
 }
+
+/* Esto afecta SOLAMENTE a las imágenes que están dentro de una tarjeta */
+#productos .card-container .img-fluid {
+    display: block;
+    max-width: 100%;   /* ¡Esta es la clave! Anula el límite de los 200px */
+    width: 100%;       /* Obliga a estirarse al ancho de la tarjeta */
+    height: 200px;     /* Mantiene las 3 fotos del mismo alto */
+    object-fit: cover; /* Evita que se deformen */
+}
+
+
+
+/* ========================================= */
+/* CLASES DEL PROFESOR PARA EL FORMULARIO    */
+/* ========================================= */
+
+/* El profesor le puso border-bottom, lo cambiamos a border completo para que parezca caja */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 12px 20px; 
+    margin-bottom: 15px; 
+    font: inherit;
+    /* Heredar la fuente de body */
+    color: var(--color6);
+    border: 1px solid var(--color2); 
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto focus: se pinta el borde cuando le das clic */
+.form-control:focus {
+    border-color: var(--color9); /* Se vuelve amarillo al hacer click*/
+}
+
+/* Para que no deformen el mensaje */
+.form-control-noresize {
+    resize: none;
+}
+
+.form-link {
+    color: var(--color5);
+    text-decoration: none;
+}
+
+.form-link:hover {
+    text-decoration: underline; /* Un pequeño detalle visual al pasar el ratón */
+}
+
+.form-terminos input {
+    margin-top: 4px; 
+}
+
+
+/* Botón flotante para subir */
+.scroll-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px; /* Centrar verticalmente */
+
+    background-color: var(--color5); 
+    color: var(--color4);
+    border: 1px solid var(--color4); 
+    font-size: 20px;
+    z-index: 1000; 
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-up:hover {
+    background-color: var(--color1); /* Se vuelve negro al pasar el ratón */
+    color: var(--color4);
+}
+
+/* ========================================= */
+/* TÍTULOS DE PÁGINAS INTERNAS (Subpáginas)  */
+/* ========================================= */
+.page-title {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color4); /* Letra blanca */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Imagen base por defecto */
+    background-image: url("../img/banner-logo-reposterias.jpg"); 
+}
+
+/* Capa oscura transparente para que resalte el texto */
+.page-title::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
+}
+
+.page-title-content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-title-content h2 {
+    font-size: 3.5rem;
+    color: var(--color4); /* Fuerza el color blanco */
+    margin-bottom: 10px;
+}
+
+.page-title-content p {
+    font-size: 1.2rem;
+    color: var(--color4);
+}
+
+
 

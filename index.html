@@ -16,7 +16,8 @@
     <!-- Enlazar html con fuentes externas de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
 
     <!-- Enlazar FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -65,18 +66,19 @@
             <div class="nav-bar">
 
                 <div class="nav-logo">
-                    <a href="#">
-                        <img class="img-fluid heartbeat" src="assets/img/logo-banner-panchita.png" alt="Logo de Panchita">
+                    <a href="index.html">
+                        <img class="img-fluid heartbeat" src="assets/img/logo-banner-panchita.png"
+                            alt="Logo de Panchita">
                     </a>
                 </div>
 
                 <nav class="nav-menu">
-                    <a class="nav-menu-link nav-menu-link-active" href="#">Inicio</a>
-                    <a class="nav-menu-link" href="#">Nosotros</a>
-                    <a class="nav-menu-link" href="#">Categorías</a>
-                    <a class="nav-menu-link" href="#">Novedades</a>
-                    <a class="nav-menu-link" href="#">Promociones</a>
-                    <a class="nav-menu-link" href="#">Contacto</a>
+                    <a class="nav-menu-link nav-menu-link-active" href="index.html">Inicio</a>
+                    <a class="nav-menu-link" href="assets/pages/nosotros.html">Nosotros</a>
+                    <a class="nav-menu-link" href="assets/pages/categorias.html">Categorías</a>
+                    <a class="nav-menu-link" href="assets/pages/novedades.html">Novedades</a>
+                    <a class="nav-menu-link" href="assets/pages/promociones.html">Promociones</a>
+                    <a class="nav-menu-link" href="assets/pages/contacto.html">Contacto</a>
                 </nav>
 
             </div>
@@ -86,87 +88,23 @@
     <!-- Contenido principal de la pagina -->
     <main>
         <!-- Banner -->
-        <section id="banner" class="padding-section">
-            <div class="background-rojo">
-                <img class="img-fluid" src="assets/img/banner-logo-reposterias.jpg" alt="">
-            </div>
-        </section>
-
-        <!-- Nosotros -->
-        <section id="nosotros" class="padding-section">
+        <section id="banner" class="padding-xl">
             <div class="container">
-                <h2>Nosotros</h2>
-                <!-- Crea dos parrafos de 50 palagras cada uno (p>lorem50*2) este si lleva () en su codigo -->
-                <p>
-                    En Panchita nos especializamos en la preparación de postres artesanales elaborados con ingredientes
-                    frescos y de alta calidad. Nuestro equipo trabaja con dedicación para ofrecer productos deliciosos,
-                    creativos y cuidadosamente decorados, buscando siempre brindar una experiencia agradable y especial
-                    a cada uno de nuestros clientes.
-                </p>
-                <p>
-                    Desde nuestros inicios, hemos tenido como objetivo compartir momentos dulces y memorables mediante
-                    tortas, cupcakes y diversos postres personalizados. Nos esforzamos por mantener una atención cercana
-                    y un servicio confiable, adaptándonos a las necesidades y preferencias de cada celebración o evento
-                    especial.
-                </p>
-            </div>
-        </section>
+                <div class="row align-center">
 
-        <!--BANNER NOSOTROS-->
-        <section class="banner-section padding-section">
-            <div class="banner-container">
-                <img src="assets/img/banner-nosotros-panc.jpg" alt="">
-            </div>
-        </section>
+                    <div class="col banner-textos">
+                        <p>¡Tenemos una gran variedad de postres!</p>
+                        <h1>Compra tu postre favorito <br> <span>hoy con 30% Off</span></h1>
+                        <div class="botones-banner">
+                            <a href="#" class="btn-general">Comprar Ahora</a>
+                        </div>
+                    </div>
 
-        <!-- Mision -->
-        <section id="mision" class="padding-section">
-            <div class="container">
-                <h2>Misión</h2>
-                <p>
-                    Nuestra misión es elaborar productos de repostería que combinen sabor, calidad y creatividad,
-                    ofreciendo a nuestros clientes experiencias únicas en cada celebración. Buscamos mantener altos
-                    estándares en nuestros procesos y brindar una atención personalizada que genere confianza y
-                    satisfacción en cada pedido realizado.
-                </p>
-                <p>
-                    En Panchita trabajamos constantemente para innovar en nuestros diseños y recetas, utilizando
-                    ingredientes seleccionados y técnicas artesanales. Nuestro compromiso es crear postres que
-                    transmitan alegría, dedicación y pasión por la repostería, acompañando momentos especiales con
-                    productos deliciosos y presentaciones atractivas.
-                </p>
-            </div>
-        </section>
+                    <div class="col">
+                        <img class="img-fluid" src="assets/img/logo-banner-panchita.png" alt="Postres Panchita">
+                    </div>
 
-        <!-- BANNER MISION-->
-        <section class="banner-section padding-section">
-            <div class="banner-container">
-                <img class="img-reducida" src="assets/img/img-mision.jpg" alt="">
-            </div>
-        </section>
-
-        <!-- Vision -->
-        <section id="vision" class="padding-section">
-            <div class="container">
-                <h2>Visión</h2>
-                <p>
-                    Nuestra visión es convertirnos en una pastelería reconocida por la calidad de nuestros productos, la
-                    creatividad de nuestras preparaciones y la confianza de nuestros clientes. Aspiramos a destacar en
-                    el mercado local ofreciendo experiencias memorables a través de postres innovadores y un servicio de
-                    excelencia.
-                </p>
-                <p>
-                    Buscamos seguir creciendo y expandiendo nuestra variedad de productos, manteniendo siempre el
-                    compromiso con la calidad, la atención personalizada y la satisfacción de cada cliente. En Panchita
-                    deseamos ser una referencia en repostería artesanal y celebraciones especiales en nuestra comunidad.
-                </p>
-            </div>
-        </section>
-
-        <!-- BANNER VISION-->
-        <section class="banner-section padding-section">
-            <div class="banner-container">
-                <img class="img-reducida" src="assets/img/img-vision.jpg" alt="">
+                </div>
             </div>
         </section>
 
@@ -191,55 +129,56 @@
                 <div class="container">
 
                     <!-- Flexbox padre -->
-                     <div class="row">
+                    <div class="row">
                         <!-- Flexbox Hijo 1 -->
-                         <div class="col">
+                        <div class="col">
                             <!-- Tarjeta 1 -->
-                             <div class="card">
-                                 <div class="card-container">
-                                     <h3 class="titulo-centrado">Torta de Chocolate</h3>
-                                     <img class="img-fluid" src="assets/img/tortachocolate.webp" alt="">
-                                     <p>
-                                         Nuestra torta de chocolate está preparada con una masa suave y húmeda, cubierta con una
-                                         deliciosa crema de cacao. Es ideal para cumpleaños, reuniones familiares o cualquier ocasión
-                                         especial donde se quiera disfrutar un postre clásico, intenso y lleno de sabor.
-                                     </p>
-                                 </div>
-                             </div> <!--Fin de Tarjeta 1-->
-                         </div> <!--Fin de Flexbox 1-->
-
-                         <!-- Flexbox hijo 2 -->
-                         <div class="col">
-                             <!-- Tarjeta 2 -->
-                              <div class="card">
+                            <div class="card">
                                 <div class="card-container">
-                                    <h3 class="titulo-centrado">Cheesecake</h3>
+                                    <img class="img-fluid" src="assets/img/tortachocolate.webp" alt="">
+                                    <h3 class="titulo-centrado">Torta de Chocolate</h3>
+                                    <p>
+                                        Deliciosa torta de chocolate preparada con una masa suave y húmeda, cubierta con
+                                        una
+                                        intensa crema de cacao.
+                                    </p>
+                                </div>
+                            </div> <!--Fin de Tarjeta 1-->
+                        </div> <!--Fin de Flexbox 1-->
+
+                        <!-- Flexbox hijo 2 -->
+                        <div class="col">
+                            <!-- Tarjeta 2 -->
+                            <div class="card">
+                                <div class="card-container">
                                     <img class="img-fluid" src="assets/img/cheesecake.jpg" alt="">
+                                    <h3 class="titulo-centrado">Cheesecake</h3>
                                     <p>
-                                        Nuestro cheesecake combina una base crujiente de galleta con una suave mezcla de queso crema y
-                                        un delicado toque dulce. Es un postre fresco y elegante, perfecto para acompañar reuniones,
-                                        celebraciones o disfrutar en cualquier momento del día.
+                                        Nuestro cheesecake combina una base crujiente de galleta con una suave mezcla de
+                                        queso crema y
+                                        un delicado toque dulce. Es un postre fresco y elegante, perfecto para acompañar
+                                        celebraciones.
                                     </p>
                                 </div>
-                              </div> <!--Fin de la Tarjeta 2-->
-                         </div> <!--Fin del hijo 2-->
+                            </div> <!--Fin de la Tarjeta 2-->
+                        </div> <!--Fin del hijo 2-->
 
-                         <!-- Flexbox hijo 3 -->
-                          <div class="col">
-                             <!-- Tarjeta 3 -->
-                              <div class="card">
+                        <!-- Flexbox hijo 3 -->
+                        <div class="col">
+                            <!-- Tarjeta 3 -->
+                            <div class="card">
                                 <div class="card-container">
-                                    <h3 class="titulo-centrado">Cupcakes</h3>
                                     <img class="img-fluid" src="assets/img/cupcakes.webp" alt="">
+                                    <h3 class="titulo-centrado">Cupcakes</h3>
                                     <p>
-                                        Nuestros cupcakes son elaborados diariamente con ingredientes seleccionados y decoraciones
-                                        creativas. Disponibles en diferentes sabores y diseños, son una excelente opción para fiestas,
-                                        eventos especiales o para disfrutar un dulce detalle en cualquier ocasión.
+                                        Nuestros cupcakes son elaborados diariamente con ingredientes seleccionados y
+                                        decoraciones
+                                        creativas. Disponibles en diferentes sabores y diseños.
                                     </p>
                                 </div>
-                              </div> <!--Fin Tarjeta 3-->
-                          </div> <!--Fin de Hijo 3-->
-                     </div> <!--Fin de Flexbox padre-->
+                            </div> <!--Fin Tarjeta 3-->
+                        </div> <!--Fin de Hijo 3-->
+                    </div> <!--Fin de Flexbox padre-->
                 </div>
             </div>
         </section>
@@ -326,41 +265,7 @@
             </div>
         </section>
 
-        <!-- Tabla de contactos -->
-
-        <section id="contacto" class="padding-xl">
-            <div class="container">
-                <h2>Contactos</h2>
-
-                <table class="tbl-contacto">
-                    <thead>
-                        <tr>
-                            <th>Contacto</th>
-                            <th>Descripción</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Teléfono</td>
-                            <td>998 156 203</td>
-                        </tr>
-                        <tr>
-                            <td>Correo</td>
-                            <td>panchita.postres@hotmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>Panchita Postres</td>
-                        </tr>
-                        <tr>
-                            <td>Instagram</td>
-                            <td>@panchita.postres</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        
 
         <!-- Tabla de horario -->
         <section id="horario" class="padding-section">
@@ -425,11 +330,35 @@
         <div class="container">
             <!-- Etqueta para agregar contenido general (div) -->
             <!-- (&copy); se encarga del copyrigh en el pie de pagina-->
-            <div>
-                &copy; 2026 Panchita - Todos los derechos reservados
+            <!-- caja padre de flexbox -->
+            <div class="footer-flexbox">
+                <!-- Flexbox hijo 1 -->
+                <div>
+                    &copy; 2026 Panchita - Todos los derechos reservados
+                </div>
+                <!-- Flexbox hijo 2 -->
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/mariaalmenara.pe/?locale=es_LA">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a target="_blank" href="https://www.instagram.com/mariaalmenara/?hl=es">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a target="_blank" href="https://www.youtube.com/@mariaalmenara8255">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
             </div>
         </div>
     </footer>
+
+    <!-- Boton scroll-up -->
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
 
 </body>
 
