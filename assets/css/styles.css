@@ -160,13 +160,20 @@ html {
 }
 
 
-#horario {
+#footer-information {
     background-color: var(--color7);
 }
 
-#horario h2 {
-    color: var(--color4);
+#footer-information .row {
+    justify-content: center; /* Empuja todas las columnas hacia el centro */
+    gap: 39px; /* Aquí controlas la separación exacta. Puedes subir o bajar este número */
 }
+
+/* 2. Le quitamos el "estiramiento" automático a los hijos del footer */
+#footer-information .col {
+    flex-grow: 0.15; /* Obliga a la columna a medir solo lo que mide su tabla, ni un pixel más */
+}
+
 
 
 /* ------------------------------------ */
@@ -418,25 +425,60 @@ h3 {
     padding: 10px;
 }
 
-/* Tabla de horarios */
+/* Tabla de footer */
 
-.tbl-horario {
+.tbl-footer {
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
-.tbl-horario th {
+.tbl-footer th {
     color: var(--color4);
-    border: 1px solid var(--color7);
-    padding: 10px;
+    padding: 5px;
 }
 
-.tbl-horario td {
-    border: 1px solid var(--color8);
-    color: var(--color4);
-    padding: 10px;
+.tbl-footer td {
+    color: var(--color8);
+    padding: 5px;
 }
+
+.tbl-footer th, 
+.tbl-horas th {
+    text-align: left;
+    padding-bottom: 15px; /* Opcional: para darle un poquito de aire debajo del título */
+}
+
+/* Quita el estilo por defecto de los enlaces en el footer */
+.tbl-footer a {
+    text-decoration: none; 
+    color: var(--color8); 
+}
+
+/* Un toque extra: que cambie de color o se subraye al pasar el mouse (A los profes les encanta esto) */
+.tbl-footer a:hover {
+    color: var(--color5); 
+
+}
+
+/* Tabla de horas */
+
+.tbl-horas {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.tbl-horas th {
+    color: var(--color5);
+    padding: 5px;
+}
+
+.tbl-horas td {
+    color: var(--color5);
+    padding: 5px;
+}
+
 
 /* Flexbox para el footer */
 .footer-flexbox {
