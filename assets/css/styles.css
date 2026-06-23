@@ -95,6 +95,7 @@ html {
 #footer {
     background-color: var(--color7);
     color: var(--color8);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
 
 #footer a {
@@ -112,6 +113,7 @@ html {
 #banner {
     background-color: var(--color5);
     color: var(--color4);
+    background-image: url('../img/inspiration-geometry.png');
 }
 
 /* PRODUCTO */
@@ -164,14 +166,18 @@ html {
     background-color: var(--color7);
 }
 
-#footer-information .row {
-    justify-content: center; /* Empuja todas las columnas hacia el centro */
-    gap: 39px; /* Aquí controlas la separación exacta. Puedes subir o bajar este número */
+/* Agrupamos ambas secciones del pie de página para que compartan la misma textura */
+#footer-information,
+#footer {
+    background-color: var(--color7); 
+    background-image: url("../img/green-dust-and-scratches.png"); 
 }
 
-/* 2. Le quitamos el "estiramiento" automático a los hijos del footer */
-#footer-information .col {
-    flex-grow: 0.15; /* Obliga a la columna a medir solo lo que mide su tabla, ni un pixel más */
+/* Nuevo estilo para los iconos de redes sociales en el footer de contacto */
+.redes-footer {
+    display: flex;
+    gap: 25px; /* Separación perfecta entre iconos */
+    margin-top: 10px;
 }
 
 
@@ -446,19 +452,94 @@ h3 {
 .tbl-footer th, 
 .tbl-horas th {
     text-align: left;
-    padding-bottom: 15px; /* Opcional: para darle un poquito de aire debajo del título */
 }
 
 /* Quita el estilo por defecto de los enlaces en el footer */
 .tbl-footer a {
+    display: flex;
+    align-items: center; /* Los centra verticalmente */
+    gap: 8px; /* Separación exacta entre el icono y el texto */
     text-decoration: none; 
-    color: var(--color8); 
+    color: var(--color8);
 }
 
 /* Un toque extra: que cambie de color o se subraye al pasar el mouse (A los profes les encanta esto) */
 .tbl-footer a:hover {
     color: var(--color5); 
 
+}
+
+/* 1. Controlamos la separación entre las 3 redes sociales */
+.redes-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px; /* ¡Aumenta este número si quieres que estén más separadas! */
+    margin-top: 15px; /* Le da un poco de respiro respecto al correo de arriba */
+}
+
+/* 2. Le damos tamaño directamente al ICONO (<i>) */
+.redes-footer a i {
+    font-size: 26px; /* ¡Sube este número para hacer los iconos más gigantes! */
+    color: var(--color8);
+    transition: color 0.3s ease;
+}
+
+/* 3. Mantenemos tu efecto rojo al pasar el mouse */
+.redes-footer a i:hover {
+    color: var(--color5); 
+}
+
+/* =========================================
+   1. ICONOS DE CONTACTO (Teléfono y Correo)
+   ========================================= */
+/* Apuntamos específicamente a los iconos de FontAwesome dentro de la tabla */
+.tbl-footer a i.fa-phone, 
+.tbl-footer a i.fa-envelope {
+    font-size: 20px; /* Hace los iconos más grandes */
+    color: var(--color9); /* Usa tu variable de amarillo/mostaza */
+}
+
+/* =========================================
+   2. REDES SOCIALES (Fila y Círculos)
+   ========================================= */
+.redes-footer {
+    display: flex; 
+    flex-direction: row; 
+    gap: 15px; 
+    margin-top: 15px;
+}
+
+/* El enlace que ahora actuará como un circulo */
+td .redes-footer a {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 42px; 
+    height: 42px; 
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08); 
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; 
+    margin-left: 0;
+}
+
+/* El icono de la red social por dentro */
+td .redes-footer a i {
+    font-size: 18px; 
+    color: var(--color4); 
+    margin: 0; 
+}
+
+/* =========================================
+   3. Efecto hover en iconos de de contacto del footer 
+   ========================================= */
+.redes-footer a:hover {
+    background-color: var(--color5); /* El círculo se pinta de tu rojo */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+}
+
+.redes-footer a:hover i {
+    color: var(--color4); /* El icono sigue blanco sobre el fondo rojo */
 }
 
 /* Tabla de horas */
