@@ -320,6 +320,10 @@ h3 {
     color: var(--color10); /* El texto sigue completamente negro */
 }
 
+.btn-general .btn-full {
+    padding: 100px;
+}
+
 
 
 

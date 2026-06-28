@@ -136,64 +136,90 @@
             <section id="bannerproductos">
                 <img class="img-fluid" src="assets/img/postres3.jpeg" alt="">
             </section>
+            </section>
 
-            <div class="padding-section">
+            <section id="productos">
                 <div class="container">
+                    <h2>Productos Recomendados</h2>
+                </div>
+            </section>
 
+            <!-- Fila 1 de recomendados -->
+            <section class="padding-xl">
+                <div class="container">
                     <!-- Flexbox padre -->
                     <div class="row">
-                        <!-- Flexbox Hijo 1 -->
-                        <div class="col">
-                            <!-- Tarjeta 1 -->
-                            <div class="card">
-                                <div class="card-container">
-                                    <img class="img-fluid" src="assets/img/tortachocolate.webp" alt="">
-                                    <h3 class="titulo-centrado">Torta de Chocolate</h3>
-                                    <p>
-                                        Deliciosa torta de chocolate preparada con una masa suave y húmeda, cubierta con
-                                        una
-                                        intensa crema de cacao.
-                                    </p>
-                                </div>
-                            </div> <!--Fin de Tarjeta 1-->
-                        </div> <!--Fin de Flexbox 1-->
+                    <div class="col">
+                        <div class="card producto-card">
+                            <img class="img-fluid producto-img" src="assets/img/tortachocolate.webp"
+                                alt="Pastel de chocolate">
+                            <div class="card-container">
+                                <h3>Pastel de Chocolate</h3>
+                                <p>Bizcocho suave de chocolate con crema dulce y cobertura artesanal de chocolate.</p>
+                                <p class="producto-precio">
+                                    S/ 45.00
+                                </p>
+                                <a class="btn-general" href="contacto.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Flexbox hijo 2 -->
+                         <div class="col">
+                        <div class="card producto-card">
+                            <img class="img-fluid producto-img" src="assets/img/helado-postre.png"
+                                alt="Copa de helado con postre">
+                            <div class="card-container">
+                                <h3>Copa Dulce</h3>
+                                <p>Copa de helado acompañada con trozos de postre y salsa de chocolate</p>
+                                <p class="producto-precio">
+                                    S/ 10.00
+                                </p>
+                                <a class="btn-general" href="contacto.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
 
-                        <!-- Flexbox hijo 2 -->
-                        <div class="col">
-                            <!-- Tarjeta 2 -->
-                            <div class="card">
-                                <div class="card-container">
-                                    <img class="img-fluid" src="assets/img/cheesecake.jpg" alt="">
-                                    <h3 class="titulo-centrado">Cheesecake</h3>
-                                    <p>
-                                        Nuestro cheesecake combina una base crujiente de galleta con una suave mezcla de
-                                        queso crema y
-                                        un delicado toque dulce. Es un postre fresco y elegante, perfecto para acompañar
-                                        celebraciones.
-                                    </p>
-                                </div>
-                            </div> <!--Fin de la Tarjeta 2-->
-                        </div> <!--Fin del hijo 2-->
+                    </div>
 
-                        <!-- Flexbox hijo 3 -->
-                        <div class="col">
-                            <!-- Tarjeta 3 -->
-                            <div class="card">
-                                <div class="card-container">
-                                    <img class="img-fluid" src="assets/img/cupcakes.webp" alt="">
-                                    <h3 class="titulo-centrado">Cupcakes</h3>
-                                    <p>
-                                        Nuestros cupcakes son elaborados diariamente con ingredientes seleccionados y
-                                        decoraciones
-                                        creativas. Disponibles en diferentes sabores y diseños.
-                                    </p>
-                                </div>
-                            </div> <!--Fin Tarjeta 3-->
-                        </div> <!--Fin de Hijo 3-->
-                    </div> <!--Fin de Flexbox padre-->
                 </div>
-            </div>
-        </section>
+            </section>
+            <!-- Fila 2 de recomendados -->
+             <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                        <div class="card producto-card">
+                            <img class="img-fluid producto-img" src="assets/img/cupcake-redvelvet.jpg"
+                                alt="Cupcake red velvet">
+                            <div class="card-container">
+                                <h3>Cupcake Red Velvet (12 ud.)</h3>
+                                <p>Clásico cupcake red velvet con crema suave y presentación elegante</p>
+                                <p class="producto-precio">
+                                    S/ 20.00
+                                </p>
+                                <a class="btn-general" href="contacto.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card producto-card">
+                            <img class="img-fluid producto-img" src="assets/img/galleta-choc.jpg"
+                                alt="Galletas con chispas de chocolate">
+                            <div class="card-container">
+                                <h3>Galletas con Chispas (5 ud.)</h3>
+                                <p>Galletas crocantes con chispas de chocolate y sabor casero.</p>
+                                <p class="producto-precio">
+                                    S/ 18.00
+                                </p>
+                                <a class="btn-general" href="contacto.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+             </section>
+                
 
         <!-- Video -->
 
@@ -481,6 +507,9 @@
                     <a target="_blank" href="https://www.youtube.com/@mariaalmenara8255">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
+                    <a target="_blank" href="https://pe.linkedin.com/company/mariaalmenara">
+                  <i class="fa-brands fa-linkedin"></i>  
+                </a>
                 </div>
 
             </div>
@@ -491,8 +520,6 @@
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
-
-    /*Enlazar el html con el script*/
     <script src="assets/js/scripts.js"></script>
 
 </body>
