@@ -113,7 +113,7 @@ html {
 #banner {
     background-color: var(--color5);
     color: var(--color4);
-    background-image: url('../img/inspiration-geometry.png');
+    background-image: url('../img/back-main-food.png');
 }
 
 /* PRODUCTO */
@@ -996,6 +996,19 @@ td .redes-footer a i {
 
 .section-bg {
     background-color: var(--color5);
+    background-image: url(../img/vecteezy_bakery-cakes-dessert-pastries-linear-pattern-doodle_14212574-removebg-preview.png);
+}
+
+/* 1. Modificar el título (h2) solo dentro de los fondos rojos */
+.section-bg .categoria-header h2 {
+    color: var(--color4); /* Fuerza el color blanco */
+    font-weight: 800; /* Lo hace mucho más grueso (bold) */
+}
+
+/* 2. Modificar el párrafo (p) solo dentro de los fondos rojos */
+.section-bg .categoria-header p {
+    color: var(--color4); /* Fuerza el color blanco */
+    font-weight: 600; /* Lo hace un poco más grueso de lo normal */
 }
 
 .producto-card {
